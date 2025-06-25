@@ -21,13 +21,9 @@ const assertArraysEqual = function(array1, array2) {
 };
 const without = function(source, itemsToRemove) {
   let newArray = [];
-  for (let items of itemsToRemove) {
-    for (let info of source) {
-      if (typeof items === typeof info){
-        if (items !== info) {
-          newArray.push(info);
-        }
-      }
+  for (let info of source) {
+    if (!itemsToRemove.includes(info)) {
+      newArray.push(info);
     }
   }
   return newArray;
@@ -41,3 +37,4 @@ assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]);
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
