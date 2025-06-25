@@ -34,3 +34,17 @@ const countLetters = function(string) {
 
 console.log(countLetters("lighthouse in the house"));
 console.log(countLetters('LHL'));
+
+// for (const letter of string) {
+//   if (letter !== ' ') {
+//     if (result[letter]) {
+//       result[letter] += 1;
+//     } else {
+//       result[letter] = 1;
+//     }
+//   }
+// }
+
+// const result1 = countLetters('LHL');
+// assertEqual(result1['L'], 2);
+// assertEqual(result1['H'], 1);
