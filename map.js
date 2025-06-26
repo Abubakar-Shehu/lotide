@@ -13,8 +13,8 @@ const map = (array, callback) => {
     returnArr.push(callback(item));
     
   }
-    return returnArr;
-}
+  return returnArr;
+};
 
 const results1 = map(words, (word) => word[0]);
 console.log(results1);
