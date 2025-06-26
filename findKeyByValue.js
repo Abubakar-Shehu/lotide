@@ -11,9 +11,9 @@ const findKeyByValue = function(object, value) {
   for (const keys in object){
     if (object[keys] === value){
       key = keys
+      return key
     }
   }
-  return key
 }
 
 const bestTVShowsByGenre = {
