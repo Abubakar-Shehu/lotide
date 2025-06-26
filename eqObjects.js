@@ -27,10 +27,13 @@ const eqObjects = function(object1, object2) {
   }
 
   for (const val in object1) {
-    if (object1[val] !== object2[val]) {
+    if(Array.isArray(object1[val])){
+      eqArrays(object1[val],object2[val])
+    }else if (object1[val] !== object2[val]) {
       return false;
     }
     return true;
+
   }
 
 };
