@@ -1,4 +1,4 @@
-const words = ["ground", "control", "to", "major", "tom"];
+// const words = ["ground", "control", "to", "major", "tom"];
 
 const map = (array, callback) => {
   // console.log("array: ", array);
@@ -16,6 +16,7 @@ const map = (array, callback) => {
   return returnArr;
 };
 
-const results1 = map(words, (word) => word[0]);
-console.log(results1);
+module.exports = map;
+// const results1 = map(words, (word) => word[0]);
+// console.log(results1);
 
