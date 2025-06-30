@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@abubakar_shehu/lotide",
   "version": "1.0.0",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,14 +13,14 @@
     "url": "git+https://github.com/Abubakar-Shehu/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Abubakar Shehu",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Abubakar-Shehu/lotide/issues"
   },
   "homepage": "https://github.com/Abubakar-Shehu/lotide#readme",
-  "description": "",
+  "description": "A mini clone of the Lodash library.",
   "devDependencies": {
     "chai": "^4.3.1",
     "mocha": "^9.2.2"
