@@ -1,13 +1,10 @@
-// const assertEqual = require('./assertEqual');
-
 const countLetters = function(string) {
   let result = {};
   
   const noSpaces = string.split(" ").join("");
   const arrayOfLetter = noSpaces.split("");
   let individualLetter = [];
-  // Want to iterate over the string to count how many letters there are
-  // Need to count how many each letter are but also be able to know what letters they are
+
   for (const letters of arrayOfLetter) {
     if (!individualLetter.includes(letters)) {
       individualLetter.push(letters);
@@ -27,20 +24,3 @@ const countLetters = function(string) {
 };
 
 module.exports = countLetters;
-
-// console.log(countLetters("lighthouse in the house"));
-// console.log(countLetters('LHL'));
-
-// // for (const letter of string) {
-// //   if (letter !== ' ') {
-// //     if (result[letter]) {
-// //       result[letter] += 1;
-// //     } else {
-// //       result[letter] = 1;
-// //     }
-// //   }
-// // }
-
-// const result1 = countLetters('LHL');
-// assertEqual(result1['L'], 2);
-// assertEqual(result1['H'], 1);
